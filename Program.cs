@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 IConfigurationBuilder? configuration = new ConfigurationBuilder().AddJsonFile($"appsettings.json");
 
 IConfigurationRoot config = configuration.Build();
-string? connectionString = config.GetConnectionString("AzureDatabase");
+string? connectionString = config.GetConnectionString("Database");
 
 if (connectionString == null)
 {
